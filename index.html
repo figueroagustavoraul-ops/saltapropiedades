@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salta Propiedades | Gestión Inmobiliaria Integral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container flex-between">
+            <span>📞 Atención al Cliente: +54 387 123-4567</span>
+            <span>📍 Oficina Central: Av. Belgrano, Salta Capital</span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Salta<span>Propiedades</span></a>
+            <nav class="menu" id="nav-menu">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#catalogo">Propiedades</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#publicar" class="btn btn-outline-light">Publicar Propiedad</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Líderes en el Mercado Inmobiliario Salteño</span>
+            <h1>Encontrá el lugar donde querés vivir</h1>
+            <p>Alquileres transparentes, tasaciones oficiales y las mejores oportunidades de inversión en Salta y alrededores.</p>
+            
+            <div class="search-box-container">
+                <div class="search-tabs">
+                    <button class="tab-btn active">Alquilar</button>
+                    <button class="tab-btn">Comprar</button>
+                    <button class="tab-btn">Temporal</button>
+                </div>
+                <div class="search-form">
+                    <select id="filter-type">
+                        <option value="all">Tipo de Inmueble</option>
+                        <option value="depto">Departamento</option>
+                        <option value="casa">Casa</option>
+                    </select>
+                    <select id="filter-zone">
+                        <option value="all">Zona / Barrio</option>
+                        <option value="centro">Microcentro / Macrocentro</option>
+                        <option value="grandbourg">Grand Bourg / San Lorenzo</option>
+                        <option value="norte">Zona Norte / UNSa</option>
+                    </select>
+                    <button class="btn btn-accent" id="search-submit">Buscar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h2>+1.200</h2>
+                <p>Propiedades Administradas</p>
+            </div>
+            <div class="stat-item">
+                <h2>15 años</h2>
+                <p>De Trayectoria Local</p>
+            </div>
+            <div class="stat-item">
+                <h2>98%</h2>
+                <p>Clientes Satisfechos</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container section-padding" id="catalogo">
+        <div class="section-header">
+            <span class="sub-title">Nuestra Selección</span>
+            <h2 class="section-title">Propiedades Destacadas</h2>
+            <p class="section-desc">Hacé clic en los botones de consulta para interactuar directamente con nuestra Inteligencia Artificial sobre requisitos o visitas.</p>
+        </div>
+        
+        <div class="grid-propiedades">
+            <article class="card-propiedad" data-type="depto" data-zone="centro" data-name="Departamento Premium - Microcentro">
+                <div class="tag-operacion en-alquiler">Alquiler Residencial</div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Living moderno e iluminado" class="propiedad-img">
+                </div>
+                <div class="card-body">
+                    <span class="ubicacion">📍 Calle Mitre al 400, Microcentro</span>
+                    <h3>Depto 2 Ambientes con Balcón y Amenities</h3>
+                    <div class="precio">$ 350.000 <span class="periodo">/ mes</span></div>
+                    <p class="card-text">Excelente iluminación natural, cocina semi-integrada con barra, amoblado parcial de categoría y cochera subterránea opcional.</p>
+                    <div class="detalles">
+                        <span>🛏️ 1 Dorm.</span>
+                        <span>🚿 1 Baño</span>
+                        <span>📐 52 m²</span>
+                    </div>
+                    <button class="btn-consultar">Consultar Requisitos con IA</button>
+                </div>
+            </article>
+
+            <article class="card-propiedad" data-type="casa" data-zone="grandbourg" data-name="Casa Quinta - Grand Bourg">
+                <div class="tag-operacion en-venta">Oportunidad de Venta</div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" alt="Fachada de casa de lujo con piscina" class="propiedad-img">
+                </div>
+                <div class="card-body">
+                    <span class="ubicacion">📍 Los Azahares, Grand Bourg</span>
+                    <h3>Casa Quinta Familiar de Alta Categoría</h3>
+                    <div class="precio">U$S 145.000</div>
+                    <p class="card-text">Propiedad desarrollada en dos plantas. Amplio jardín perimetral con piscina, quincho con asador y 3 suites climatizadas.</p>
+                    <div class="detalles">
+                        <span>🛏️ 3 Dorm.</span>
+                        <span>🚿 3 Baños</span>
+                        <span>📐 240 m²</span>
+                    </div>
+                    <button class="btn-consultar">Consultar Requisitos con IA</button>
+                </div>
+            </article>
+
+            <article class="card-propiedad" data-type="depto" data-zone="norte" data-name="Monoambiente - Zona Universitaria">
+                <div class="tag-operacion en-alquiler">Alquiler Universitario</div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Monoambiente optimizado moderno" class="propiedad-img">
+                </div>
+                <div class="card-body">
+                    <span class="ubicacion">📍 Av. Reyes Católicos, Zona Norte</span>
+                    <h3>Monoambiente Equipado y Luminoso</h3>
+                    <div class="precio">$ 220.000 <span class="periodo">/ mes</span></div>
+                    <p class="card-text">Ideal para estudiantes. A 5 minutos de la UNSa y la UCASAL. Incluye bajas expensas, termotanque eléctrico y cocina equipada.</p>
+                    <div class="detalles">
+                        <span>🛏️ Est. Único</span>
+                        <span>🚿 1 Baño</span>
+                        <span>📐 35 m²</span>
+                    </div>
+                    <button class="btn-consultar">Consultar Requisitos con IA</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <section class="services-section" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Soluciones Reales</span>
+                <h2 class="section-title">Nuestros Servicios Profesionales</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>Administración de Alquileres</h3>
+                    <p>Nos encargamos del cobro, mantenimiento legal, contratos bajo normativas vigentes y gestión de expensas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💎</div>
+                    <h3>Tasaciones Profesionales</h3>
+                    <p>Realizamos tasaciones oficiales de mercado para determinar el valor real competitivo de tu propiedad.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Desarrollos y Proyectos</h3>
+                    <p>Asesoramiento personalizado en loteos, fideicomisos y proyectos desde pozo en zonas de alta plusvalía de Salta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Clientes Satisfechos</span>
+                <h2 class="section-title">Qué Dicen de Nosotros</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Excelente atención. Conseguí alquilar un departamento para mi hijo que estudia en la UNSa en menos de una semana. Todo el trámite de garantes fue muy ágil."</p>
+                    <h4>- Mariana Ortiz (Metán)</h4>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Dejamos la administración de nuestros locales comerciales del centro en sus manos y la tranquilidad es total. Depósitos a término y excelente filtrado de inquilinos."</p>
+                    <h4>- Carlos Figueroa (Salta Capital)</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="publicar">
+        <div class="container cta-grid">
+            <div class="cta-text">
+                <h2>¿Tenés una propiedad en venta o alquiler?</h2>
+                <p>Dejanos tus datos y un tasador matriculado se pondrá en contacto para ayudarte a rentabilizar tu patrimonio de manera segura.</p>
+            </div>
+            <form class="cta-form" onsubmit="event.preventDefault(); alert('Formulario enviado (Simulación Demo). El asesor se comunicará a la brevedad.');">
+                <input type="text" placeholder="Tu Nombre Completo" required>
+                <input type="tel" placeholder="Número de Teléfono (WhatsApp)" required>
+                <button type="submit" class="btn btn-accent">Enviar Datos</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="widget-chat-float" id="chat-trigger">
+        <span class="ping-status"></span>
+        <span>💬 Consultas Online 24hs</span>
+    </div>
+
+    <div class="ventana-chat" id="chat-container">
+        <div class="chat-header">
+            <div class="avatar-ia">🏢</div>
+            <div>
+                <h4>Asistente Legal & Comercial AI</h4>
+                <p>Salta Propiedades Automatización</p>
+            </div>
+            <button id="btn-cerrar">&times;</button>
+        </div>
+        <div class="chat-messages" id="box-mensajes">
+            <div class="msg b-msg">
+                ¡Hola! Bienvenido/a al canal digital 24/7 de <strong>Salta Propiedades</strong>. 🔑<br><br>Soy un asistente inteligente entrenado para guiarte en el mercado de Salta. <br><br>¿Querés conocer los **requisitos para alquilar**, saber los **gastos de ingreso** o programar una **visita presencial**?
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="input-usuario" placeholder="Preguntá por requisitos, comisiones, visitas..." autocomplete="off">
+            <button id="btn-enviar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Salta Propiedades</h3>
+                <p>Seguridad jurídica y comercial en transacciones de bienes raíces en la Provincia de Salta.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Nuestras Oficinas</h4>
+                <p>🏢 Casa Central: Av. Belgrano 1200, Salta Capital</p>
+                <p>📞 Teléfono: +54 387 154-8899</p>
+                <p>✉️ Correo: info@saltapropiedadesdemo.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios de Atención</h4>
+                <p>Lunes a Viernes: 09:00 a 13:00 y 17:00 a 20:30</p>
+                <p>Sábados: 09:30 a 13:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Salta Propiedades. Todos los derechos reservados. <br> Maqueta tecnológica interactiva para demostraciones comerciales.</p>
+            <p class="autor">Desarrollado de forma modular por: <strong>Gustavo Figueroa (Sistemas)</strong></p>
+        </div>
+    </footer>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
